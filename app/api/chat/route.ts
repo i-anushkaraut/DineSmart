@@ -64,7 +64,6 @@ export async function POST(req: Request) {
         system: SYSTEM_PROMPT,
         messages: convertToModelMessages(messages),
         tools: {
-            webSearch,
             vectorDatabaseSearch,
         },
         stopWhen: stepCountIs(10),
