@@ -14,9 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DineSmart",
-   icon: "/favicon.ico",
   description: "DineSmart",
 };
+
+export const metadata = {
+    icon: "/favicon.ico",
+  };
 
 export default function RootLayout({
   children,
