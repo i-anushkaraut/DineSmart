@@ -17,10 +17,6 @@ export const metadata: Metadata = {
   description: "DineSmart",
 };
 
-export const metadata = {
-    icon: "/favicon.ico",
-  };
-
 export default function RootLayout({
   children,
 }: Readonly<{
