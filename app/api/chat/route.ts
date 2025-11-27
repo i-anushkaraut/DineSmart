@@ -64,6 +64,7 @@ export async function POST(req: Request) {
         system: SYSTEM_PROMPT,
         messages: convertToModelMessages(messages),
         tools: {
+            webSearch,
             vectorDatabaseSearch,
         },
         stopWhen: stepCountIs(10),
@@ -79,3 +80,4 @@ export async function POST(req: Request) {
     return result.toUIMessageStreamResponse({
         sendReasoning: true,
     });
+}
